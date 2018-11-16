@@ -58,7 +58,7 @@ client.on('ready', () => {
   console.log('')
   console.log('')
   console.log('')
-  client.user.setActivity('www.Flix-Host.com')
+  client.user.setActivity('SOON')
 });
 
 client.on('message', message => {
@@ -176,7 +176,7 @@ client.on('message', message => {
     if (err) console.log(err)
   });
 
-  wUser.send(`**◄══════════► [ Flix-Host ] ◄══════════►**\n\n\n**➥ لقد اخذت وارن**\n\n**➥ في سيرفر:**\n➥ [ ${message.guild.name} ]\n\n**➥ بواسطة:**\n➥ [ ${message.author.username}#${message.author.discriminator} ]\n\n**➥ السبب:**\n➥ [ ${reason} ]\n\n**➥ الوارن رقم:**\n➥[ ${warns[wUser.id].warns} ]\n\n\n**◄══════════► [ Flix-Host ] ◄══════════►**`);
+  wUser.send(`**◄══════════► [ RoxStore ] ◄══════════►**\n\n\n**➥ لقد اخذت وارن**\n\n**➥ في سيرفر:**\n➥ [ ${message.guild.name} ]\n\n**➥ بواسطة:**\n➥ [ ${message.author.username}#${message.author.discriminator} ]\n\n**➥ السبب:**\n➥ [ ${reason} ]\n\n**➥ الوارن رقم:**\n➥[ ${warns[wUser.id].warns} ]\n\n\n**◄══════════► [ RoxStore ] ◄══════════►**`);
 
   let warnEmbed = new Discord.RichEmbed()
   .setTitle(':no_entry_sign: **[WARN]**')
@@ -340,7 +340,7 @@ if(warns[wUser.id].warns == 2){
 // كود الهلب
     if(command == prefix + 'help') {
 		message.channel.send(`
-◄════════════► [ Flix-Host ] ◄════════════►
+◄════════════► [ RoxStore ] ◄════════════►
 
 :books: **اوامر الهلب**
 
@@ -350,12 +350,12 @@ if(warns[wUser.id].warns == 2){
 
 ⫸【3】 ${prefix}help-admin 『لرؤية قائمة الهلب للادمن』
 
-◄════════════► [ Flix-Host ] ◄════════════►
+◄════════════► [ RoxStore ] ◄════════════►
 `);
 	};
     if (command == prefix + 'help-member') {
 		message.author.send(`
-**◄════════════► [ Flix-Host ] ◄════════════►**
+**◄════════════► [ RoxStore ] ◄════════════►**
 
 :dividers: **الاوامر العامة**
 
@@ -393,7 +393,7 @@ if(warns[wUser.id].warns == 2){
 
 ⫸【7】 \`\`${prefix}points\`\` **OR** \`\`${prefix}points <mention>\`\` 『لرؤية نقاطك او نقاط اشخاص اخرين باللعبه』
 
-**◄════════════► [ Flix-Host ] ◄════════════►**`).catch(err =>{console.log('[LOG] =>' + err);
+**◄════════════► [ RoxStore ] ◄════════════►**`).catch(err =>{console.log('[LOG] =>' + err);
 message.reply('**عندك اعدادات الخصوصيه لا يمكنني ان ارسل الى الخاص حقك**').then(msg => msg.delete(5000));
 });
 
@@ -403,7 +403,7 @@ message.reply('**عندك اعدادات الخصوصيه لا يمكنني ان
     if (command == prefix + 'help-staff') {
 		if(!message.member.hasPermission('MUTE_MEMBERS')) return;
 		message.author.send(`
-**◄════════════► [ Flix-Host ] ◄════════════►**
+**◄════════════► [ RoxStore ] ◄════════════►**
 
 :dividers: **الاوامر العامة**
 
@@ -451,14 +451,14 @@ message.reply('**عندك اعدادات الخصوصيه لا يمكنني ان
 
 ⫸【4】 \`\`${prefix}clear <number>\`\` 『لمسح الشات بعدد』
 
-**◄════════════► [ Flix-Host ] ◄════════════►**`);
+**◄════════════► [ RoxStore ] ◄════════════►**`);
 		message.reply('**شوف الخاص :envelope_with_arrow:**').then(msg => msg.delete(3000));
 		message.delete();
 	};
     if(command == prefix + 'help-admin') {
 		if(!message.member.hasPermission('ADMINISTRATOR')) return;
 		message.author.send(`
-**◄════════════► [ Flix-Host ] ◄════════════►**
+**◄════════════► [ RoxStore ] ◄════════════►**
 
 :dividers: **الاوامر العامة**
 
@@ -530,7 +530,7 @@ message.reply('**عندك اعدادات الخصوصيه لا يمكنني ان
 
 ⫸【11】 \`\`${prefix}bc <bc words>\`\` 『لارسال رسالة الى جميع اعضاء السيرفر』
 
-**◄════════════► [ Flix-Host ] ◄════════════►**`);
+**◄════════════► [ RoxStore ] ◄════════════►**`);
 		message.reply('**شوف الخاص :envelope_with_arrow:**').then(msg => msg.delete(3000));
 		message.delete();
 	};
