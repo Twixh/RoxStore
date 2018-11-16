@@ -58,7 +58,7 @@ client.on('ready', () => {
   console.log('')
   console.log('')
   console.log('')
-  client.user.setActivity('SOON')
+  client.user.setActivity('&help')
 });
 
 client.on('message', message => {
@@ -189,7 +189,7 @@ client.on('message', message => {
   .setTimestamp()
   .setFooter(`${message.author.username}#${message.author.discriminator}`, message.author.avatarURL)
 
-  let warnchannel = message.guild.channels.find(`name`, "flixbot-log");
+  let warnchannel = message.guild.channels.find(`name`, "log");
   if(!warnchannel) return;
 
   warnchannel.send(warnEmbed);
